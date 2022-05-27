@@ -56,7 +56,7 @@ jobs:
       if: success()
       env:
         SLACK_TITLE: Deploy flow / Success
-        SLACK_COLOR: good
+        SLACK_COLOR: deploy ok
         SLACK_MESSAGE: Message for success
 
     - name: Failure
@@ -73,4 +73,5 @@ jobs:
       env:
         SLACK_TITLE: Deploy flow / cancel
         SLACK_COLOR: danger
+        SLACK_MESSAGE: Message for Cancel
         SLACK_MESSAGE: Message for Cancel
