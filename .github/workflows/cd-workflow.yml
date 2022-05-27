@@ -56,7 +56,11 @@ jobs:
       if: success()
       env:
         SLACK_TITLE: Deploy flow / Success
+<<<<<<< Updated upstream
         SLACK_COLOR: deploy ok
+=======
+        SLACK_COLOR: OK
+>>>>>>> Stashed changes
         SLACK_MESSAGE: Message for success
 
     - name: Failure
