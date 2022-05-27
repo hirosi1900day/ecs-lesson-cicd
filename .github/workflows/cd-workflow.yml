@@ -74,3 +74,4 @@ jobs:
         SLACK_TITLE: Deploy flow / cancel
         SLACK_COLOR: danger
         SLACK_MESSAGE: Message for Cancel
+        SLACK_MESSAGE: Message for Cancel
