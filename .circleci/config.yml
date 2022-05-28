@@ -8,22 +8,19 @@ jobs:
       - run:
           name: install dependencies
           command: npm install
-  test:
+  lint:
     docker:
       - image: circleci/node:12
     steps:
       - checkout
       - run:
           name: change directory
-          command: cd webapp
-      - run:
-          name: install dependencies
-          command: npm install
-      - run:
-          name: test
-          command: npm run lint
+          command: |
+            cd webapp
+            command: npm install
+            npm run lint
 workflows:
   test-workflow:
     jobs:
       - build
-      - test
+      - lint
