@@ -15,13 +15,13 @@ jobs:
       - checkout
       - run:
           name: change directory
-          command: cd backend
+          command: cd webapp
       - run:
           name: install dependencies
           command: npm install
       - run:
           name: test
-          command: npm run test:unit
+          command: npm run test
 workflows:
   test-workflow:
     jobs:
