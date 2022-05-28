@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <div>This application is Sample WebApp for CICD lesson.</div>
     <div>Response from REST API is... {{ info }}</div>
-    <div>cicd test by vue file</div>
+    <div>cicd test by vue file2</div>
   </div>
 </template>
 
