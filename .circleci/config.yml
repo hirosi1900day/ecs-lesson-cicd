@@ -17,7 +17,7 @@ jobs:
           name: change directory
           command: |
             cd webapp
-            command: npm install
+            npm install
             npm run lint
 workflows:
   test-workflow:
