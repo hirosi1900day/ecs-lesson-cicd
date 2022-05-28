@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run:
           name: change directory
-          command: cd webapp
+          command: cd backend
       - run:
           name: install dependencies
           command: npm install
