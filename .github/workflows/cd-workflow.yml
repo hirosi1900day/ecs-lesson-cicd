@@ -11,7 +11,7 @@ env:
   ECS_WEBAPP_SERVICE: sample-webapp
   ECS_RESTAPI_SERVICE: ecs-sample-restapi
   WEBAPP_CONTAINER_NAME: ecs-sample-webapp
-  WEBAPP_TAG: 1.0.0
+  WEBAPP_TAG: ${{ github.sha }}
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
 
