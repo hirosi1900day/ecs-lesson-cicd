@@ -19,8 +19,28 @@ jobs:
             cd webapp
             npm install
             npm run lint
+  
+  deploy_tmp:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - add_ssh_keys
+      - run:
+          name: deploy to prod
+          command: |
+            echo -e "Host git-codecommit.*.amazonaws.com\n   User ${AWS_SSH_KEY_ID}\n   StrictHostKeyChecking no" > ${HOME}/.ssh/config
+            git push ssh://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/sample-webapp
 workflows:
   test-workflow:
     jobs:
       - build
       - lint
+      - deploy_tmp:
+          requires:
+            - build
+            - lint
+          filters:
+            branches:
+              only:
+                - main
