@@ -29,4 +29,4 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Diagram
-![代替テキスト](https://cacoo.com/diagrams/7ce6irDgsU2KEpUE/DFC9E/shapes/b0U617s5bMa-e3QXmWTrEsM)
+[![インフラ構成図](https://cacoo.com/diagrams/7ce6irDgsU2KEpUE-DFC9E.png)](https://cacoo.com/diagrams/7ce6irDgsU2KEpUE-DFC9E.png)
