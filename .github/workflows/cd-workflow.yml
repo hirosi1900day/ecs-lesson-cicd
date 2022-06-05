@@ -14,7 +14,6 @@ env:
   WEBAPP_TAG: ${{ github.sha }}
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
-
 jobs:
   deploy:
     name: deploy
