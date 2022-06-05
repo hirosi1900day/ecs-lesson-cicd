@@ -27,3 +27,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Diagram
+![代替テキスト](https://cacoo.com/diagrams/7ce6irDgsU2KEpUE/DFC9E/shapes/b0U617s5bMa-e3QXmWTrEsM "タイトル")
