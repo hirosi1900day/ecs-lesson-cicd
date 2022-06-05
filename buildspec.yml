@@ -28,3 +28,5 @@ artifacts:
     files:
       - imagedefinitions.json
       - imageDetail.json
+      - buildspec.yml
+      - appspec.yml
