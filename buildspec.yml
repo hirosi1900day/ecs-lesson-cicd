@@ -30,7 +30,7 @@ artifacts:
       - image*.json
       - appspec.yml
       - taskdef.json
-    secondary-artidacts:
+    secondary-artifacts:
       DefinitionArtifact:
         files:
           - appspec.yml
