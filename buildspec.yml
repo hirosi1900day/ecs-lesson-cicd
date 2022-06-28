@@ -35,7 +35,7 @@ artifacts:
         files:
           - appspec.yml
           - taskdef.json
-      ImageArtidact:
+      ImageArtifact:
         files:
           - imageDetail.json
 
