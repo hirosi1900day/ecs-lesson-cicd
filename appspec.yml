@@ -5,5 +5,5 @@ Resources:
       Properties:
         TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo:
-          ContainerName: "ecs-sample-webapp-task-def"
+          ContainerName: "sample-webapp"
           ContainerPort: 8080
