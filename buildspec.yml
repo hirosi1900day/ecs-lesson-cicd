@@ -9,7 +9,7 @@ phases:
       - REPOSITORY_URI=572919087216.dkr.ecr.ap-northeast-1.amazonaws.com/ecs-sample-webapp
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:=latest}
-      - $(aws ecs describe-task-definition --task-definition ecs-sample-webapp-task-def:4 --query taskDefinition | jq '.containerDefinitions[0].image="<IMAGE1_NAME>"' > taskdef.json)
+      # - $(aws ecs describe-task-definition --task-definition ecs-sample-webapp-task-def:4 --query taskDefinition | jq '.containerDefinitions[0].image="<IMAGE1_NAME>"' > taskdef.json)
   build:
     commands:
       - echo Build started on `date`
