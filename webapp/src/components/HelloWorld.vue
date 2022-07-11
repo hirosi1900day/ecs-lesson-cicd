@@ -9,7 +9,7 @@
 </template>
 
 <script>
-// import axios from 'axios'
+import axios from 'axios'
 
 export default {
   name: 'HelloWorld',
@@ -20,14 +20,13 @@ export default {
     return {
       info: 'test'
     }
+  },
+  mounted() {
+    const BACKEND_URL = 'https://sherast.com/api'
+    axios
+      .get(BACKEND_URL)
+      .then(response => (this.info = response.data))
   }
-  // ,
-  // mounted() {
-  //   const BACKEND_URL = 'https://sherast.com/api'
-  //   axios
-  //     .get(BACKEND_URL)
-  //     .then(response => (this.info = response.data))
-  // }
 }
 </script>
 
