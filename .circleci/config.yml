@@ -41,7 +41,7 @@ workflows:
               only:
                 - codeDeplo_test
             tags:
-             ignore: /^force-push*/
+              ignore: /^force-push*/
 
       - deploy_tmp:
           requires:
