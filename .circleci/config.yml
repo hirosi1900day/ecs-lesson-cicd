@@ -42,6 +42,7 @@ workflows:
             branches:
               only:
                 - codeDeplo_test
+                - main
 
       - deploy_tmp:
           requires:
