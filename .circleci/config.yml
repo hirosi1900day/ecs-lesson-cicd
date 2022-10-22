@@ -37,11 +37,11 @@ workflows:
       - build
       - lint: 
           filters:
+            tags:
+              ignore: /^force-push*/
             branches:
               only:
                 - codeDeplo_test
-            tags:
-              ignore: /^force-push*/
 
       - deploy_tmp:
           requires:
