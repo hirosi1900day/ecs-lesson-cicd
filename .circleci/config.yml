@@ -39,9 +39,7 @@ workflows:
           filters:
             tags:
               only: /^force-push*/
-            branches:
-              only:
-                - codeDeplo_test
+            
 
       - deploy_tmp:
           requires:
