@@ -35,7 +35,14 @@ workflows:
   test-workflow:
     jobs:
       - build
-      - lint
+      - lint: 
+          filters:
+            branches:
+              only:
+                - main
+            tags:
+             ignore: /^force-push*/
+
       - deploy_tmp:
           requires:
             - build
