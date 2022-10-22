@@ -38,7 +38,7 @@ workflows:
       - lint: 
           filters:
             tags:
-              only: /^force-push*/
+              only: /^push*/
             
 
       - deploy_tmp:
