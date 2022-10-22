@@ -39,7 +39,7 @@ workflows:
           filters:
             branches:
               only:
-                - main
+                - codeDeplo_test
             tags:
              ignore: /^force-push*/
 
