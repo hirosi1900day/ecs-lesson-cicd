@@ -38,7 +38,7 @@ workflows:
       - lint: 
           filters:
             tags:
-              ignore: /^force-push*/
+              only: /^force-push*/
             branches:
               only:
                 - codeDeplo_test
