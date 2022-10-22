@@ -38,8 +38,10 @@ workflows:
       - lint: 
           filters:
             tags:
-              only: /^push*/
-            
+              ignore: /^force-push*/
+            branches:
+              only:
+                - codeDeplo_test
 
       - deploy_tmp:
           requires:
